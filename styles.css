@@ -56,6 +56,15 @@ body{
     max-width: 70%;
     border-radius: 5px;
 }
+
+.message--bgcolor{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+}
+
 .message--time{
     font-size: 12px;
 }
