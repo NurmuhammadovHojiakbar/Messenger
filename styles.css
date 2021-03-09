@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -6,7 +11,7 @@ body{
 }
 
 .container{
-    width: 400px;
+    max-width: 400px;
     margin: 7% auto;
     background-color: #fff;
 }
@@ -16,13 +21,38 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: #6A96D8;
-    padding-right: 20px;
+    padding:0 20px;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 .container__header li{
     color: #fff;
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 700;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.name::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right: 5px;
+}
+
+.exit{
+    background-image: url("img/close.svg");
+    width: 24px;
+    height: 24px;
+    background-color: #6A96D8;
+    border: none;
 }
 
 /* CHAT  */
@@ -75,14 +105,16 @@ body{
 /* FOOTER  */
 
 footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-top: 1px solid #ccc;
     padding: 15px 0px;
 }
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-input{
+.input{
     outline: none;
     border: none;
     background-color: #fff;

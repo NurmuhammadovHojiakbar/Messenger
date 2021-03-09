@@ -12,10 +12,8 @@
 <body>
   <main class="container">
     <header class="container__header">
-      <ul>
-        <li>Marslik Mars</li>
-      </ul>
-      <img  class="header--image" src="img/close.svg" alt="Close Button" width="" height="">
+      <h1 class="name">Marslik Mark</h1>
+      <button class="exit"></button>
     </header>
     <div class="chatting__section">
       <div class="chat__container">
@@ -37,8 +35,10 @@
         </div>
       </div>    
       <footer class="container__footer">
-        <input class="input__text" type="text" placeholder="Xabarni Kiriting">
-        <input class="input__button" type="submit" value="SEND">
+        <form>
+          <input class="input__text input" type="text" placeholder="Xabarni Kiriting" required name="message:">
+          <button class="input__button input" type="submit">Send</button>
+        </form>  
       </footer>
   </div>
   </main>
